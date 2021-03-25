@@ -1,12 +1,11 @@
 package springguides;
 
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
 class SpringGuidesApplicationTests {
 
-	@Test
+	// @Test 今は使わない
 	void contextLoads() {
 	}
 
