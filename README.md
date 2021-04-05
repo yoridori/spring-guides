@@ -48,3 +48,17 @@ RestTemplate#getForObjectの第一引数に指定したURLから取得した値�
 参考URL：  
 https://calil.jp/doc/api.html  
 https://dstn.appresso.com/hc/ja/articles/220345967  
+
+## Spring JDBC JdbcTemplate で SQL 発行  
+2021/4/6 (火)  
+
+### 対象ページ
+https://spring.pleiades.io/guides/gs/relational-data-access/  
+
+### 所感
+SQL文へ値をバインドする時にJdbcTemplateを使用することでSQLインジェクション対策になるそうだ。  
+Java11だと一部のqueryメソッドが非推奨だったため、RowMapperクラスを自作し、使用した。  
+SQL文をあらかじめ用意してあれば書くのは簡単だけど、  
+複数記述ミスが合った場合、ミスの発見に手間がかかりそう。  
+エンティティに値を入れてエンティティベースで更新出来たほうがミスは減る気がする。  
+SQLをXMLに書く等であれば分業できるからいいが、Javaソースに直接書くなら利点はあまり無い気がする。  

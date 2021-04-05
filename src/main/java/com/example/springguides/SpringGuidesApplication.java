@@ -13,7 +13,7 @@ import org.springframework.web.client.RestTemplate;
 import com.example.springguides.consumingrest.Quote;
 
 @SpringBootApplication
-@EnableScheduling
+// @EnableScheduling
 public class SpringGuidesApplication {
 
     private static final Logger log = LoggerFactory.getLogger(SpringGuidesApplication.class);
