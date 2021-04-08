@@ -1,6 +1,24 @@
 # spring-guides
 Spring公式のガイドを使った練習用リポジトリ
 
+## ファイルのアップロード
+2021/4/6 (火)〜2021/4/8 (木)    
+
+### 対象ページ
+https://spring.pleiades.io/guides/gs/uploading-files/  
+
+### 所感
+最初に各mainメソッドで実行できるように修正した。  
+URLアクセス等はComponentScanが使用できるようSpringBootApplicationアノテーションを付与。  
+JDBCTemplateとAPI使用のクラスはComponentScanが必要無いので、  
+Autowired や Beanが効くように、EnableAutoConfigurationアノテーションを付与。  
+
+ファイルアップロードのチュートリアルは画面に沿って作成するだけでは完成しなかった。  
+Githubに上がっているソースを確認し、必要なソースを追加で作成した。  
+Thymeleafとのつながりがチュートリアルだけでは確認しづらいので、改めて確認する必要がありそう。  
+また、ファイルのアップロードは画面系では使う機会が多いため、よく確認しておく。  
+(ダウンロード時のGetMappingにあるファイル名の指定などなど)
+
 ## Spring JDBC JdbcTemplate で SQL 発行  
 2021/4/6 (火)  
 
